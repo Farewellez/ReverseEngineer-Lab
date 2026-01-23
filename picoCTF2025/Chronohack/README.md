@@ -23,7 +23,7 @@ yang sesuai nama function, ini adalah kerentanan _insecure randomness_ yang dima
 
 Karena sudah tertebak, maka kita haya perlu mundur beberapa milidetik atau detik atau mundur beberapa integer agar sesuai dengan waktu sistem membuat token. semisal waktu kita mengirim payloads itu 1769163590733.2578 jika diubah ke integer mungkin 1769163590733 sedangkan di server itu 1769163590740 yang mana selisih beberapa angka. hal inilah yang perlu di exploitasi. <br>
 
-Satu lagi kerentanan yang ada yaitu _lack of rate limiting_ yang mana attacker bisa melakukan bruteforcing dan connect berkali-kali ke sistem dengan menggunakan script exploit seperti yang kubuat di repository ini **(exploit.py)**.
+Satu lagi kerentanan yang ada yaitu _lack of rate limiting_ yang mana attacker bisa melakukan bruteforcing dan connect berkali-kali ke sistem dengan menggunakan script exploit seperti yang kubuat di repository ini **(solve.py)**.
 Script itu menggunakan pwntools yang akan menghasilkan log yang kurang lebih seperti ini
 ```
 └─$ python3 solve.py
