@@ -39,4 +39,10 @@ Kelihatan kalau inner_txt atau input kita di argumen atau bisa dibilang flagnya 
         cipher_block = xor_bytes(block, key_hash)
         ciphertext += cipher_block
 ```
-Karena ini hanya XOR biasa dan bukan AES, ditambah kita sudah ada keynya, jadi aku buat script solve.py di repository ini untuk melakukan XOR langsung ke ciphernya karena sifat XOR yang 
+Karena ini hanya XOR biasa dan bukan AES, ditambah kita sudah ada keynya, jadi aku buat script solve.py di repository ini untuk melakukan XOR langsung ke ciphernya karena sifat XOR yang inversible yang mana jika A XOR B = C maka hanya perlu melakukan C XOR B untuk mendapatkan A. Hasil akhir dari script solver akan seperti ini
+
+```
+Raw cipher: b'5410603d236160940efdcaf26beca4ddfaf5327aaf41b730645f77d4ccfdded5-00118a79e0fbdbba6bfc52384735078d69073d211d4efbc15b35ce5a168ad59a-00f7f88f01862b79cff1f05cc3e3dc12picoCTF{block_3SRhViRbT1qcX_XUjM0r49cH_qCzmJZzBK_41c10331}1123443252a07cca666af8e7ace2495f-000f669f06d71a4263f0353d23bc3968d6ba3e3a123ff8a4581d730ddb5cedde-009df6f0bf347f93ff88a7ff8b381550eeb65f198479a008635eeb691cf34f2c\x02\x02' 384
+b'12picoCTF{block_3SRhViRbT1qcX_XUjM0r49cH_qCzmJZzBK_41c10331}1123443252a07cca666af8e7ace2495f-000f669f06d71a4263f0353d23bc3968d6ba3e3a123ff8a4581d730ddb5cedde-009df6f0bf347f93ff88a7ff8b381550eeb65f198479a008635eeb691cf34f2c\x02\x02'
+```
+**Flag: picoCTF{block_3SRhViRbT1qcX_XUjM0r49cH_qCzmJZzBK_41c10331}**
