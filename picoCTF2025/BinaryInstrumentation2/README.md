@@ -32,5 +32,5 @@ Untuk cara ini kita hoki karena flag di hardcoded. Kita hanya perlu terus F8 hin
 
 Seperti yang kukatakan, logicnya adalah membandingkan rax dengan 0xffffffffffffffff yang mana itu akan selalu sama dan kondisi JNZ ke flag tidak pernah terpenuhi. Tapi disini kita gaperlu bypass atau patch loguc ini karena sudah dapat string base64 flagnya. Hasil kedua cara tetap menghasilkan hal sama
 
-**Flag Encoded: cGljb0NURntmcjFkYV9mMHJfYjFuX2luNXRydW0zbnQ0dGlvbiFfYjIxYWVmMzl9**
+**Flag Encoded: cGljb0NURntmcjFkYV9mMHJfYjFuX2luNXRydW0zbnQ0dGlvbiFfYjIxYWVmMzl9** <br>
 **Flag Decoded: picoCTF{fr1da_f0r_b1n_in5trum3nt4tion!_b21aef39}**
